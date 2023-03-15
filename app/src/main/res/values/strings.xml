@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">LoginAndSignUp</string>
+    <string name="app_name">Medicube</string>
     <string name="type_your_email">Type your Email</string>
     <string name="type_your_password">Type Your Password</string>
+
     <string name="sign_in">Sign In</string>
     <string name="not_registered_yet_sign_up">Not Registered Yet , Sign Up !</string>
+    <string name="moto">Let\'s help each other..</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fname">First Name</string>
+    <string name="enterfname">Enter First Name</string>
+    <string name="enterlname">Enter Last Name</string>
 </resources>
