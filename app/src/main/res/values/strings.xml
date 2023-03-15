@@ -10,4 +10,10 @@
     <string name="fname">First Name</string>
     <string name="enterfname">Enter First Name</string>
     <string name="enterlname">Enter Last Name</string>
+    <string name="exName">Yasira Banuka</string>
+    <string name="exemail">yasirabanuka@gmail.com</string>
+    <string name="payment">Payment</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="password">Password:</string>
 </resources>
