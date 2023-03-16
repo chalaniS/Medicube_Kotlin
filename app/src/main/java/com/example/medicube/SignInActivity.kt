@@ -20,9 +20,11 @@ class SignInActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+
         binding.textView.setOnClickListener {
-//            val intent = Intent(this, SignUpActivity::class.java)
-            val intent = Intent(this, user_profile::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
+            //edit here
+//            val intent = Intent(this, user_profile::class.java)
 
             startActivity(intent)
         }
@@ -35,7 +37,7 @@ class SignInActivity : AppCompatActivity() {
 
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, Userprofile::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
