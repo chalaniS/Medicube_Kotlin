@@ -4,23 +4,156 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:elevation="18dp"
     tools:context=".HomePage">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/moto"
+            android:textAlignment="center"
+            android:textColor="@color/bottum_nav_item"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/grey_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/baseline_handshake_24" />
+
+            <TextView
+                android:id="@+id/needmedicine3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="35dp"
+                android:text="@string/need_medicine"
+                android:textAlignment="viewStart"
+                android:textColor="@color/bottum_nav_item"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/grey_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/baseline_groups_2_24" />
+
+            <TextView
+                android:id="@+id/needmedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="35dp"
+                android:text="@string/availablemedicine"
+                android:textAlignment="viewStart"
+                android:textColor="@color/bottum_nav_item"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/grey_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/baseline_local_pharmacy_24" />
+
+            <TextView
+                android:id="@+id/needmedicined"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="35dp"
+                android:text="@string/pharmacy"
+                android:textAlignment="viewStart"
+                android:textColor="@color/bottum_nav_item"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/grey_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/baseline_history_24" />
+
+            <TextView
+                android:id="@+id/needmedicined8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="35dp"
+                android:text="@string/history"
+                android:textAlignment="viewStart"
+                android:textColor="@color/bottum_nav_item"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottumNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/nav_bg"
+        app:elevation="8dp"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        app:itemTextColor="@drawable/bottom_nav_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/bottum_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
