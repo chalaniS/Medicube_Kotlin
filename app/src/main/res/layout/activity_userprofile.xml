@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#F5F5F5"
     tools:context=".Userprofile"
     tools:textAlignment="center">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -46,7 +46,7 @@
                         android:layout_width="103dp"
                         android:layout_height="87dp"
                         android:layout_marginStart="8dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginTop="24dp"
                         android:layout_marginEnd="32dp"
                         android:textAlignment="center"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -86,14 +86,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="32dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="80dp"
                         android:background="@drawable/white_background"
                         android:elevation="3dp"
                         android:orientation="vertical"
                         android:paddingLeft="5dp"
                         android:paddingTop="5dp"
                         android:paddingBottom="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +104,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
                             android:orientation="horizontal"
                             android:textAlignment="center">
 
@@ -227,7 +230,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/grey_background"
                             android:orientation="horizontal"
                             android:paddingLeft="10sp"
@@ -258,7 +262,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="15sp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/grey_background"
                             android:orientation="horizontal"
                             android:paddingLeft="10sp"
@@ -268,7 +274,7 @@
 
                             <TextView
                                 android:id="@+id/mobile"
-                                android:layout_width="wrap_content"
+                                android:layout_width="122dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Mobile :"
@@ -289,7 +295,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="15sp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/grey_background"
                             android:orientation="horizontal"
                             android:paddingLeft="10sp"
@@ -299,7 +307,7 @@
 
                             <TextView
                                 android:id="@+id/ct"
-                                android:layout_width="wrap_content"
+                                android:layout_width="83dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="City :"
@@ -320,7 +328,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="15sp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
                             android:background="@drawable/grey_background"
                             android:orientation="horizontal"
                             android:paddingLeft="10sp"
@@ -330,7 +340,7 @@
 
                             <TextView
                                 android:id="@+id/countryly"
-                                android:layout_width="wrap_content"
+                                android:layout_width="86dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Country :"
@@ -348,22 +358,27 @@
                                 android:textSize="15sp" />
                         </LinearLayout>
 
-                        <Button
-                            android:id="@+id/button2"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="16dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="16dp"
-                            android:background="@drawable/background_button"
-                            android:padding="10dp"
-                            android:text="Edit profile"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="1.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-                            app:layout_constraintVertical_bias="0.191" />
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/background_button"
+                                android:text="Edit profile"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                                app:layout_constraintVertical_bias="0.191" />
+                        </LinearLayout>
 
 
                     </LinearLayout>
@@ -375,5 +390,19 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottumNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/bottom_nav_background"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        app:itemTextColor="@drawable/bottom_nav_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:menu="@menu/bottum_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

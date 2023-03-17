@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profile">
+
+    <activity
+        android:id="@+id/favorite"
+        android:name="com.example.medicube.Userprofile"
+        android:label="activity_editprofile"
+        tools:layout="@layout/activity_editprofile" />
+
+    <activity
+        android:id="@+id/medicine"
+        android:name="com.example.medicube.SignInActivity"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in" />
+
+    <activity
+        android:id="@+id/profile"
+        android:name="com.example.medicube.SignInActivity"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in" />
+
+    <activity
+        android:id="@+id/notification"
+        android:name="com.example.medicube.SignUpActivity"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+
+    <activity
+        android:id="@+id/setting"
+        android:name="com.example.medicube.SignUpActivity"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+
+</navigation>
