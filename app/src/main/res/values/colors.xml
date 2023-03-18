@@ -14,6 +14,14 @@
     <color name="bottum_nav_item">#222C88</color>
     <color name="fragment_bg_color">#DCC574</color>
     <color name="nav_bg">#32776A</color>
+    <color name="bcolor">#34E6B9</color>
 
+    <!--    need medicines-->
+    <string name="medicine1">Amoxicillin.</string>
+    <string name="medi">Amoxicillin.  500mg</string>
+    <string name="name">A.B.Perera</string>
+    <string name="Ad">No. 07, Kaduwela Road, Malabe</string>
+    <string name="contact">Contact</string>
+    <string name="medical">Azithromycin. 100mg</string>
 
 </resources>
