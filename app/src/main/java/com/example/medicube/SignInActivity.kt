@@ -22,9 +22,9 @@ class SignInActivity : AppCompatActivity() {
 
 
         binding.textView.setOnClickListener {
-            val intent = Intent(this, SignUpActivity::class.java)
+//            val intent = Intent(this, SignUpActivity::class.java)
             //edit here
-//            val intent = Intent(this, user_profile::class.java)
+            val intent = Intent(this, Userprofile::class.java)
 
             startActivity(intent)
         }
