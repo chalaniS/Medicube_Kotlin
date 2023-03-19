@@ -1,6 +1,6 @@
 <resources>
 
-<!--    common-->
+    <!--    common-->
     <string name="app_name">Medicube</string>
     <string name="type_your_email">Type your Email</string>
     <string name="type_your_password">Type Your Password</string>
@@ -17,7 +17,7 @@
     <string name="exName">Full Name</string>
     <string name="exemail">exampleuseremail.com</string>
 
-<!-- bottum nav bar-->
+    <!-- bottum nav bar-->
     <string name="payment">Payment</string>
     <string name="setting">Setting</string>
     <string name="notification">Notification</string>
@@ -26,10 +26,32 @@
     <string name="loading">Loading...</string>
     <string name="entercity">Enter your city</string>
     <string name="entercountry">Enter your country</string>
+
+    <string name="feedAvailable">Available Medicines</string>
+    <string name="feedContact_btn">Contact</string>
+    <string name="feedMedicine_name_1">Acetazolamide Tablets</string>
+    
+    <string name="feedMedicine_weight_1">100 g</string>
+    <string name="feedMedicine_poster_1">A. B. C. Perera</string>
+    <string name="feedMedicine_location_1">Toronto, Canada</string>
+    <string name="feedMedicine_qty_1">2 Packs</string>
+    <string name="feedMedicine_name_2">Amoxicillin Tablets</string>
+    <string name="feedMedicine_weight_2">250 mg</string>
+    <string name="feedMedicine_qty_2">3 Packs</string>
+    <string name="feedMedicine_poster_2">Mahesh Silva</string>
+    <string name="feedMedicine_location_2">London, UK</string>
+    <string name="feedMedicine_name_3">Isoniazid Syrup</string>
+    <string name="feedMedicine_weight_3">300 ml</string>
+    <string name="feedMedicine_qty_3">3 bottles</string>
+    <string name="feedMedicine_poster_3">Ihani Saumya</string>
+    <string name="feedMedicine_location_3">Sydney, Australia</string>
+    <string name="title_add_availableMedicines">Add Available Medicines</string>
+    <string name="moto_addAvailable">Let\'s help each other this moment.</string>
+
     <string name="profile">Profile</string>
 
 
-<!-- placeholder text -->
+    <!-- placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="medicine">Medicine</string>
     <string name="favorite">Favorites</string>
@@ -41,4 +63,5 @@
     <string name="editprofile">Edit Profile</string>
     <string name="submit">Submit</string>
     <string name="deleteprofile">Delete Profile</string>
+
 </resources>
