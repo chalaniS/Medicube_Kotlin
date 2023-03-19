@@ -45,8 +45,10 @@
     <string name="feedMedicine_qty_3">3 bottles</string>
     <string name="feedMedicine_poster_3">Ihani Saumya</string>
     <string name="feedMedicine_location_3">Sydney, Australia</string>
-    <string name="title_add_availableMedicines">Add Available Medicines</string>
-    <string name="moto_addAvailable">Let\'s help each other this moment.</string>
+    <string name="title_add_availableMedicine_1">Add Available</string>
+    <string name="title_add_availableMedicine_2">Medicines</string>
+    <string name="title_edit_availableMedicine_1">Edit Available</string>
+    <string name="moto_addAvailable">Let\'s help each other.....</string>
 
     <string name="profile">Profile</string>
 
@@ -63,5 +65,21 @@
     <string name="editprofile">Edit Profile</string>
     <string name="submit">Submit</string>
     <string name="deleteprofile">Delete Profile</string>
+    <string name="avFeed_enter_medicineName">Enter Medicine Name</string>
+    <string name="avFeed_enter_medicineQty">Enter Quantity you have</string>
+    <string name="avFeed_enter_medicineWeight">Enter Medicine Weight</string>
+    <string name="avFeed_enter_medicineDescription">Enter Medicine Description</string>
+    <string name="addAvailable_btn_submit">SUBMIT</string>
+    <string name="addAvailable_btn_cancel">CANCEL</string>
+    <string name="addAvailable_btn_save">SAVE</string>
+    <string name="tagline_editAvailable">Edit your entered details</string>
+    <string name="title_userActivity">My Activity</string>
+    <string name="myActivity_userName">Eehanee Saumya</string>
+    <string name="myActivity_userLocation">Sydney, Australia</string>
+    <string name="myActivity_userEmail">abc@gmail.com</string>
+    <string name="avSummary_title_history">Summary</string>
+    <string name="avSummary_title_main">Available Medicine</string>
+    <string name="summary_btn_edit">Edit</string>
+    <string name="summary_btn_delete">Delete</string>
 
 </resources>
