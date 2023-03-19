@@ -15,6 +15,9 @@
     <color name="fragment_bg_color">#DCC574</color>
     <color name="nav_bg">#32776A</color>
     <color name="bcolor">#34E6B9</color>
+    <color name="availableMedicine_background">#cccbe6</color>
+    <color name="userActivity_background">#AFF2F2</color>
+    <color name="grey">#3C3C42</color>
 
     <!--    need medicines-->
     <string name="medicine1">Amoxicillin.</string>
