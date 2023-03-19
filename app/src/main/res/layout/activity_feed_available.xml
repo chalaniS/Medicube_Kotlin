@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cccbe6"
-    android:paddingBottom="20dp">
+    android:paddingBottom="20dp"
+    tools:context=".FeedAvailable">
 
     <TextView
         android:id="@+id/textView11"
@@ -461,6 +462,18 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottumNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/bottom_nav_background"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        app:itemTextColor="@drawable/bottom_nav_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
 
+        app:menu="@menu/bottum_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
