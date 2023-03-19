@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/signup_screen"
-    tools:context=".EditUser">
+    tools:context=".Editprofile">
 
 
     <ScrollView
@@ -25,7 +25,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="6dp"
                 android:fontFamily="@font/bigshot_one"
                 android:text="@string/editprofile"
                 android:textAlignment="center"
@@ -34,10 +34,10 @@
                 android:textSize="30sp" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/imageViewUser"
-                android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:layout_marginLeft="125dp"
+                android:id="@+id/userImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="150dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginRight="125dp"
                 android:background="@drawable/circle_background"
@@ -62,7 +62,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/userImage">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editTextName"
+                    android:id="@+id/fullname"
                     style="@style/LoginTextInputInnerFieldStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/fnamelay">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editTextMobile"
+                    android:id="@+id/mobile"
                     style="@style/LoginTextInputInnerFieldStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/mobilely">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editTextCity"
+                    android:id="@+id/ucity"
                     style="@style/LoginTextInputInnerFieldStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/cityem">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editTextCountry"
+                    android:id="@+id/country"
                     style="@style/LoginTextInputInnerFieldStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/countryly">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editTextEmail"
+                    android:id="@+id/emailEt"
                     style="@style/LoginTextInputInnerFieldStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -158,11 +158,10 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonSave"
+                android:id="@+id/saveData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="8dp"
                 android:background="@drawable/background_button"
                 android:text="@string/submit"
                 android:textColor="@color/bottum_nav_item"
@@ -171,8 +170,31 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/confirmPasswordLayout" />
 
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/background_button"
+                android:text="@string/deleteprofile"
+                android:textColor="#BD1717" />
 
         </LinearLayout>
     </ScrollView>
 
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottumNavigationView"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:background="@color/bottom_nav_background"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        app:itemTextColor="@drawable/bottom_nav_colors"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottum_nav_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

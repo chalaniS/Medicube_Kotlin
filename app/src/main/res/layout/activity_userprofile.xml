@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/to_background"
     tools:context=".Userprofile"
     tools:textAlignment="center">
 
@@ -38,7 +39,6 @@
                         android:id="@+id/constraintLayout2"
                         android:layout_width="match_parent"
                         android:layout_height="360dp"
-                        android:background="@drawable/to_background"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -369,11 +369,11 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/usereditbtn"
+                                android:id="@+id/button2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="15dp"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="5dp"
                                 android:layout_marginEnd="15dp"
                                 android:layout_marginRight="15dp"
                                 android:background="@drawable/background_button"
@@ -384,17 +384,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/linearLayout"
                                 app:layout_constraintVertical_bias="0.191" />
-
-
                         </LinearLayout>
-                        <Button
-                            android:id="@+id/userdeletebtn"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/background_button"
-                            android:text="@string/deleteprofile"
-                            android:textColor="#BD1717" />
 
 
                     </LinearLayout>
@@ -407,18 +397,17 @@
         </LinearLayout>
     </ScrollView>
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottumNavigationView"
-        android:layout_width="0dp"
+        android:layout_width="393dp"
         android:layout_height="60dp"
         android:background="@color/bottom_nav_background"
         app:itemIconTint="@drawable/bottom_nav_colors"
         app:itemTextColor="@drawable/bottom_nav_colors"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-
         app:menu="@menu/bottum_nav_menu" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

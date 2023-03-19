@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/to_background"
     android:elevation="18dp"
     tools:context=".HomePage">
 
@@ -27,14 +28,15 @@
             android:fontFamily="@font/alatsi"
             android:text="@string/moto"
             android:textAlignment="center"
-            android:textColor="@color/bottum_nav_item"
-            android:textSize="34sp" />
+            android:textColor="@color/bcolor"
+            android:textSize="30sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/grey_background"
+            android:elevation="6dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -62,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/grey_background"
+            android:elevation="6dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -89,6 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/grey_background"
+            android:elevation="6dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -116,6 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/grey_background"
+            android:elevation="6dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -132,7 +137,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:paddingTop="35dp"
-                android:text="@string/history"
+                android:text="@string/myactivity"
                 android:textAlignment="viewStart"
                 android:textColor="@color/bottum_nav_item"
                 android:textSize="20sp" />
@@ -143,17 +148,15 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottumNavigationView"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:background="@color/nav_bg"
-        app:elevation="8dp"
+        android:layout_width="393dp"
+        android:layout_height="60dp"
+        android:background="@color/bottom_nav_background"
         app:itemIconTint="@drawable/bottom_nav_colors"
         app:itemTextColor="@drawable/bottom_nav_colors"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-
         app:menu="@menu/bottum_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

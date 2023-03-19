@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="340dp"
         android:layout_marginEnd="16dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"

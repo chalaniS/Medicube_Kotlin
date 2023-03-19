@@ -41,4 +41,13 @@
     <string name="editprofile">Edit Profile</string>
     <string name="submit">Submit</string>
     <string name="deleteprofile">Delete Profile</string>
+    <string name="medici">Atorvastatin. 250mg</string>
+    <string name="topic">History | Needed Medicine</string>
+    <string name="myactivity">My Activity</string>
+    <string name="medical1">Azithromycin.</string>
+    <string name="med">Azithromycin. 100mg</string>
+    <string name="button">edit</string>
+    <string name="buttons">Delete</string>
+    <string name="Button">Edit</string>
+    <string name="Your_Available_Activity">Your Available Activity</string>
 </resources>
