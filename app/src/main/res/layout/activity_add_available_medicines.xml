@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/availableMedicine_background"
+    android:background="#C1DDEF"
     tools:context=".AddAvailableMedicines">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="@string/title_add_availableMedicine_1"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="@string/title_add_availableMedicine_2"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView6"
@@ -42,8 +42,19 @@
         android:layout_marginTop="12dp"
         android:text="@string/moto_addAvailable"
         android:textColor="#605E5E"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_av" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
@@ -52,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="6dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="32dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
@@ -76,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="6dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
@@ -99,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="6dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
@@ -122,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="6dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
@@ -141,10 +152,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/add_available_background_btn1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,7 +167,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/addAvailable_btn_submit"
-            android:textSize="25sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -164,9 +175,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/add_available_background_btn2"
         app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
         app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
@@ -177,7 +188,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/addAvailable_btn_cancel"
-            android:textSize="25sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
