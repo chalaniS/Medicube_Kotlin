@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/bcolor"
+    android:background="@drawable/to_background"
     tools:context=".MneedEdit">
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="302dp"
         android:layout_height="73dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
         android:text="Edit Need Medicine"
-        android:textAlignment="center"
-        android:textColor="@color/material_dynamic_neutral0"
+        android:textColor="@color/design_default_color_surface"
         android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="332dp"
+        android:layout_height="572dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="32dp"
@@ -38,7 +40,7 @@
             android:id="@+id/editTextTextPersonName"
             android:layout_width="313dp"
             android:layout_height="72dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="110dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Medicine Name"
@@ -62,19 +64,19 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Description"
-            android:visibility="invisible"
+            android:visibility="visible"
             tools:visibility="visible" />
 
         <LinearLayout
             android:id="@+id/margin"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="286dp"
+            android:layout_height="149dp"
             android:layout_margin="20dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="120dp"
+                android:layout_width="109dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="100dp"
@@ -85,21 +87,24 @@
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="120dp"
+                android:layout_width="111dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="90dp"
+                android:layout_marginRight="100dp"
                 android:background="@drawable/background_button"
                 android:text="Submit" />
         </LinearLayout>
 
     </LinearLayout>
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottumNavigationView"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:background="@color/bottom_nav_background"
+        android:layout_height="50dp"
+        android:background="@color/nav_bg"
+        app:elevation="8dp"
         app:itemIconTint="@drawable/bottom_nav_colors"
         app:itemTextColor="@drawable/bottom_nav_colors"
         app:layout_constraintBottom_toBottomOf="parent"

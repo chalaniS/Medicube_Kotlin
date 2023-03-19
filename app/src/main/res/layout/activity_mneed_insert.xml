@@ -3,26 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/bcolor"
+    android:layout_height="wrap_content"
+    android:background="@drawable/to_background"
     tools:context=".MneedInsert">
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="302dp"
         android:layout_height="73dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
         android:text="Add Need Medicine"
-        android:textColor="@color/design_default_color_on_secondary"
+        android:textColor="@color/white"
         android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="329dp"
+        android:layout_height="592dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="32dp"
@@ -30,14 +33,16 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <EditText
             android:id="@+id/editTextTextPersonName"
             android:layout_width="313dp"
             android:layout_height="72dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="100dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Medicine Name"
@@ -47,7 +52,7 @@
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="303dp"
             android:layout_height="71dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Quantity"
@@ -57,18 +62,17 @@
             android:id="@+id/editTextTextPersonName3"
             android:layout_width="303dp"
             android:layout_height="67dp"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Description"
-            android:visibility="invisible"
+            android:visibility="visible"
             tools:visibility="visible" />
 
         <LinearLayout
             android:id="@+id/margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:orientation="horizontal">
 
             <Button
