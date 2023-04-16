@@ -369,7 +369,7 @@
                             android:layout_height="wrap_content">
 
                             <Button
-                                android:id="@+id/button2"
+                                android:id="@+id/usereditbtn"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="15dp"
@@ -384,7 +384,17 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/linearLayout"
                                 app:layout_constraintVertical_bias="0.191" />
+
+
                         </LinearLayout>
+                        <Button
+                            android:id="@+id/userdeletebtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/background_button"
+                            android:text="@string/deleteprofile"
+                            android:textColor="#BD1717" />
 
 
                     </LinearLayout>

@@ -17,13 +17,7 @@
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
         <activity
-            android:name=".MneedEdit"
-            android:exported="false" />
-        <activity
-            android:name=".MneedInsert"
-            android:exported="false" />
-        <activity
-            android:name=".Mneedfeed"
+            android:name=".EditUser"
             android:exported="false" />
         <activity
             android:name=".Userprofile"

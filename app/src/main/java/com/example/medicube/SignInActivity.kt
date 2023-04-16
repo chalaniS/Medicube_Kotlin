@@ -5,9 +5,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.medicube.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
-
+import androidx.navigation.fragment.findNavController
 
 class SignInActivity : AppCompatActivity() {
+
+
 
     private lateinit var binding: ActivitySignInBinding
     private lateinit var firebaseAuth: FirebaseAuth
@@ -22,9 +24,9 @@ class SignInActivity : AppCompatActivity() {
 
 
         binding.textView.setOnClickListener {
-//            val intent = Intent(this, SignUpActivity::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
             //edit here
-            val intent = Intent(this, Userprofile::class.java)
+//            val intent = Intent(this, Userprofile::class.java)
 
             startActivity(intent)
         }
