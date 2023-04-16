@@ -1,6 +1,6 @@
 <resources>
 
-<!--    common-->
+    <!--    common-->
     <string name="app_name">Medicube</string>
     <string name="type_your_email">Type your Email</string>
     <string name="type_your_password">Type Your Password</string>
@@ -17,7 +17,7 @@
     <string name="exName">Full Name</string>
     <string name="exemail">exampleuseremail.com</string>
 
-<!-- bottum nav bar-->
+    <!-- bottum nav bar-->
     <string name="payment">Payment</string>
     <string name="setting">Setting</string>
     <string name="notification">Notification</string>
@@ -29,7 +29,7 @@
     <string name="profile">Profile</string>
 
 
-<!-- placeholder text -->
+    <!-- placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="medicine">Medicine</string>
     <string name="favorite">Favorites</string>
