@@ -18,6 +18,7 @@
     <color name="availableMedicine_background">#cccbe6</color>
     <color name="userActivity_background">#AFF2F2</color>
     <color name="grey">#3C3C42</color>
+    <color name="feedMedicineName">#363333</color>
 
     <!--    need medicines-->
     <string name="medicine1">Amoxicillin.</string>

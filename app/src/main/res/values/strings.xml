@@ -52,7 +52,6 @@
 
     <string name="profile">Profile</string>
 
-
     <!-- placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="medicine">Medicine</string>
@@ -81,5 +80,6 @@
     <string name="avSummary_title_main">Available Medicine</string>
     <string name="summary_btn_edit">Edit</string>
     <string name="summary_btn_delete">Delete</string>
+    <string name="pharmacyName">Pharmacy</string>
 
 </resources>

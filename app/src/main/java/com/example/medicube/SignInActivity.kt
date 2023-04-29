@@ -24,7 +24,7 @@ class SignInActivity : AppCompatActivity() {
         binding.textView.setOnClickListener {
 //            val intent = Intent(this, SignUpActivity::class.java)
             //edit here
-            val intent = Intent(this, AddAvailableMedicines::class.java)
+            val intent = Intent(this, FeedAvailable::class.java)
 
             startActivity(intent)
         }
