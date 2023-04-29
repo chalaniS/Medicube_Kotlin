@@ -17,6 +17,15 @@
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
         <activity
+            android:name=".DeleteUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyFeed"
+            android:exported="false" />
+        <activity
+            android:name=".AddPharmacy"
+            android:exported="false" />
+        <activity
             android:name=".SummaryAvailable"
             android:exported="false">
             <meta-data
