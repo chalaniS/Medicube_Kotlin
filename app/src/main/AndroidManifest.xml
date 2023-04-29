@@ -17,10 +17,10 @@
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
         <activity
-            android:name=".DeleteUpdate"
+            android:name=".PharmacyFeed"
             android:exported="false" />
         <activity
-            android:name=".PharmacyFeed"
+            android:name=".DeleteUpdate"
             android:exported="false" />
         <activity
             android:name=".AddPharmacy"
