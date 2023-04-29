@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
             android:text="@string/feedMedicine_weight_3"
+            android:textColor="@color/feedMedicineWeight"
             app:layout_constraintBottom_toBottomOf="@+id/textView40"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -102,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/feedMedicine_qty_3"
+            android:textColor="@color/feedMedicineQty"
             app:layout_constraintStart_toStartOf="@+id/textView40"
             app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
@@ -111,6 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/feedMedicine_poster_3"
+            android:textColor="@color/feedUserDetails"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -122,6 +125,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="12dp"
             android:text="@string/feedMedicine_location_3"
+            android:textColor="@color/feedUserDetails"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView43"
@@ -182,6 +186,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/feedMedicine_name_1"
+            android:textColor="@color/feedMedicineName"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -193,6 +198,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
             android:text="@string/feedMedicine_weight_1"
+            android:textColor="@color/feedMedicineWeight"
             app:layout_constraintBottom_toBottomOf="@+id/textView13"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -206,6 +212,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/feedMedicine_qty_1"
+            android:textColor="@color/feedMedicineQty"
             app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -215,6 +222,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/feedMedicine_poster_1"
+            android:textColor="@color/feedUserDetails"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/imageView4"
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -226,6 +234,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="12dp"
             android:text="@string/feedMedicine_location_1"
+            android:textColor="@color/feedUserDetails"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView27"
@@ -285,6 +294,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/feedMedicine_name_2"
+            android:textColor="@color/feedMedicineName"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView10"
@@ -296,6 +306,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
             android:text="@string/feedMedicine_weight_2"
+            android:textColor="@color/feedMedicineWeight"
             app:layout_constraintBottom_toBottomOf="@+id/textView46"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -309,6 +320,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/feedMedicine_qty_2"
+            android:textColor="@color/feedMedicineQty"
             app:layout_constraintStart_toStartOf="@+id/textView46"
             app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
@@ -318,6 +330,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/feedMedicine_poster_2"
+            android:textColor="@color/feedUserDetails"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/imageView10"
             app:layout_constraintTop_toBottomOf="@+id/imageView10" />
@@ -329,6 +342,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="12dp"
             android:text="@string/feedMedicine_location_2"
+            android:textColor="@color/feedUserDetails"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView49"
@@ -392,6 +406,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/feedMedicine_name_2"
+            android:textColor="@color/feedMedicineName"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -403,6 +418,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
             android:text="@string/feedMedicine_weight_2"
+            android:textColor="@color/feedMedicineWeight"
             app:layout_constraintBottom_toBottomOf="@+id/textView32"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -416,6 +432,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/feedMedicine_poster_2"
+            android:textColor="@color/feedUserDetails"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/imageView5"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -426,6 +443,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/feedMedicine_qty_2"
+            android:textColor="@color/feedMedicineQty"
             app:layout_constraintStart_toStartOf="@+id/textView32"
             app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
@@ -436,6 +454,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="12dp"
             android:text="@string/feedMedicine_location_2"
+            android:textColor="@color/feedUserDetails"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView35"
