@@ -17,6 +17,7 @@
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
         <activity
+
             android:name=".summaryNeedMedicine"
             android:exported="false" />
         <activity
@@ -27,6 +28,15 @@
             android:exported="false" />
         <activity
             android:name=".needMedicine"
+
+            android:name=".MneedEdit"
+            android:exported="false" />
+        <activity
+            android:name=".MneedInsert"
+            android:exported="false" />
+        <activity
+            android:name=".Mneedfeed"
+
             android:exported="false" />
         <activity
             android:name=".Userprofile"
