@@ -1,6 +1,6 @@
 <resources>
 
-<!--    common-->
+    <!--    common-->
     <string name="app_name">Medicube</string>
     <string name="type_your_email">Type your Email</string>
     <string name="type_your_password">Type Your Password</string>
@@ -17,7 +17,7 @@
     <string name="exName">Full Name</string>
     <string name="exemail">exampleuseremail.com</string>
 
-<!-- bottum nav bar-->
+    <!-- bottum nav bar-->
     <string name="payment">Payment</string>
     <string name="setting">Setting</string>
     <string name="notification">Notification</string>
@@ -26,10 +26,62 @@
     <string name="loading">Loading...</string>
     <string name="entercity">Enter your city</string>
     <string name="entercountry">Enter your country</string>
+
+
+    <!-- placeholder text -->
+
+    <string name="NeedMedicine">Need Medicine</string>
+    <string name="name1">A.B.Perera</string>
+    <string name="address1">No.7, Kaduwela Road, Malabe</string>
+    <string name="medicine1">Amoxicillin. 500mg</string>
+    <string name="button1">Connect</string>
+    <string name="medicine2">Azithromycin. 100mg</string>
+    <string name="name2">C.N. Saparamadu</string>
+    <string name="address2">Ballapana,Kegalle</string>
+    <string name="medicine3">Atorvastatin. 250mg</string>
+    <string name="name3">Aishu Ahasya</string>
+    <string name="address3">No.2,Temple road, Kurunegala</string>
+    <string name="medicine4">Carbimazole, 5mg</string>
+    <string name="name4">Oneki De Silva</string>
+    <string name="adress4">No.20/1,Flower Road, Gampaha</string>
+    <string name="Addneedmedicine">Add Need Medicine</string>
+    <string name="medicinename">Medicine Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="description">Description</string>
+    <string name="buttons">Submit</string>
+    <string name="editneedmedicine">Edit Need Medicine</string>
+    <string name="summary">Summary</string>
+    <string name="buttonc">Cancel</string>
+    <string name="buttone">Edit</string>
+    <string name="buttond">Delete</string>
+    <string name="AddNeedMedicine">Add Need Medicine</string>
+
+    <string name="feedAvailable">Available Medicines</string>
+    <string name="feedContact_btn">Contact</string>
+    <string name="feedMedicine_name_1">Acetazolamide Tablets</string>
+
+    <string name="feedMedicine_weight_1">100 g</string>
+    <string name="feedMedicine_poster_1">A. B. C. Perera</string>
+    <string name="feedMedicine_location_1">Toronto, Canada</string>
+    <string name="feedMedicine_qty_1">2 Packs</string>
+    <string name="feedMedicine_name_2">Amoxicillin Tablets</string>
+    <string name="feedMedicine_weight_2">250 mg</string>
+    <string name="feedMedicine_qty_2">3 Packs</string>
+    <string name="feedMedicine_poster_2">Mahesh Silva</string>
+    <string name="feedMedicine_location_2">London, UK</string>
+    <string name="feedMedicine_name_3">Isoniazid Syrup</string>
+    <string name="feedMedicine_weight_3">300 ml</string>
+    <string name="feedMedicine_qty_3">3 bottles</string>
+    <string name="feedMedicine_poster_3">Ihani Saumya</string>
+    <string name="feedMedicine_location_3">Sydney, Australia</string>
+    <string name="title_add_availableMedicine_1">Add Available</string>
+    <string name="title_add_availableMedicine_2">Medicines</string>
+    <string name="title_edit_availableMedicine_1">Edit Available</string>
+    <string name="moto_addAvailable">Let\'s help each other.....</string>
+
     <string name="profile">Profile</string>
 
-
-<!-- placeholder text -->
+    <!-- placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="medicine">Medicine</string>
     <string name="favorite">Favorites</string>
@@ -41,4 +93,22 @@
     <string name="editprofile">Edit Profile</string>
     <string name="submit">Submit</string>
     <string name="deleteprofile">Delete Profile</string>
+    <string name="avFeed_enter_medicineName">Enter Medicine Name</string>
+    <string name="avFeed_enter_medicineQty">Enter Quantity you have</string>
+    <string name="avFeed_enter_medicineWeight">Enter Medicine Weight</string>
+    <string name="avFeed_enter_medicineDescription">Enter Medicine Description</string>
+    <string name="addAvailable_btn_submit">SUBMIT</string>
+    <string name="addAvailable_btn_cancel">CANCEL</string>
+    <string name="addAvailable_btn_save">SAVE</string>
+    <string name="tagline_editAvailable">Edit your entered details</string>
+    <string name="title_userActivity">My Activity</string>
+    <string name="myActivity_userName">Eehanee Saumya</string>
+    <string name="myActivity_userLocation">Sydney, Australia</string>
+    <string name="myActivity_userEmail">abc@gmail.com</string>
+    <string name="avSummary_title_history">Summary</string>
+    <string name="avSummary_title_main">Available Medicine</string>
+    <string name="summary_btn_edit">Edit</string>
+    <string name="summary_btn_delete">Delete</string>
+    <string name="pharmacyName">Pharmacy</string>
+    <string name="EditneedMedicine">Edit Need Medicine</string>
 </resources>
