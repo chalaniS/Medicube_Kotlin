@@ -62,10 +62,17 @@ class Userprofile : AppCompatActivity() {
             userRef?.removeValue()?.addOnSuccessListener {
                 // User data deleted successfully
                 Toast.makeText(this, "User data deleted successfully", Toast.LENGTH_SHORT).show()
-                finish() // Finish the activity and go back to the previous screen
+//                finish() // Finish the activity and go back to the previous screen
+                // Navigate to the login page
+                val intent = Intent(this, SignInActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+
             }?.addOnFailureListener {
                 // Error deleting user data
                 Toast.makeText(this, "Error deleting user data: ${it.message}", Toast.LENGTH_SHORT).show()
+
+
             }
         }
     }

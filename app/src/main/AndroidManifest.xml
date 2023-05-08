@@ -19,27 +19,14 @@
         <activity
             android:name=".Calculation"
             android:exported="false" />
-        <activity
-            android:name=".MneedFeed"
-            android:exported="false" />
-        <activity
-            android:name=".MneedHistory"
-            android:exported="false" />
-        <activity
-            android:name=".MneedEdit"
-            android:exported="false" />
-        <activity
-            android:name=".MneedInsert"
-            android:exported="false" />
-        <activity
-            android:name=".MneedFeed"
-            android:exported="false" />
+
         <activity
             android:name=".Userprofile"
             android:exported="false" />
         <activity
-            android:name=".Editprofile"
-            android:exported="false" />
+            android:name=".EditUser"
+            android:parentActivityName=".Userprofile" />
+
         <activity
             android:name=".HomePage"
             android:exported="false" />
