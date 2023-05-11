@@ -50,6 +50,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/feedMedicine_name_1"
+            android:textColor="@color/feedMedicineName"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,6 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/summary_btn_delete"
+                android:textColor="@color/feedMedicineName"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -151,6 +153,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/summary_btn_delete"
+                android:textColor="@color/feedMedicineName"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -189,6 +192,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="@string/feedMedicine_name_2"
+            android:textColor="@color/feedMedicineName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -214,100 +218,9 @@
             android:layout_marginTop="12dp"
             android:text="@string/feedMedicine_qty_2"
             android:textColor="@color/black"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/textView37"
             app:layout_constraintTop_toBottomOf="@+id/textView37" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="350dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/white_background"
-        app:layout_constraintStart_toStartOf="@+id/constraintLayout12"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout12">
-
-        <TextView
-            android:id="@+id/textView53"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/feedMedicine_name_3"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.086" />
-
-        <TextView
-            android:id="@+id/textView54"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/feedMedicine_weight_3"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="@+id/textView53"
-            app:layout_constraintTop_toBottomOf="@+id/textView53" />
-
-        <TextView
-            android:id="@+id/textView55"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="@string/feedMedicine_qty_3"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="@+id/textView54"
-            app:layout_constraintTop_toBottomOf="@+id/textView54" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout20"
-            android:layout_width="90dp"
-            android:layout_height="35dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/add_available_background_btn2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView53">
-
-            <TextView
-                android:id="@+id/textView44"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/summary_btn_edit"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="90dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/background_button"
-            app:layout_constraintBottom_toBottomOf="@+id/textView55"
-            app:layout_constraintEnd_toEndOf="@+id/constraintLayout20"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout20">
-
-            <TextView
-                android:id="@+id/textView46"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/summary_btn_delete"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:textStyle="bold" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
