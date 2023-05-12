@@ -17,15 +17,19 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         firebaseAuth = FirebaseAuth.getInstance()
 
+//        binding.textView.setOnClickListener {
+////            val intent = Intent(this, SignUpActivity::class.java)
+//            //edit here
+//            val intent = Intent(this, SummaryAvailable::class.java)
+//
+//            startActivity(intent)
+//        }
 
         binding.textView.setOnClickListener {
-//            val intent = Intent(this, SignUpActivity::class.java)
-            //edit here
-            val intent = Intent(this, FeedAvailable::class.java)
-
+            val intent = Intent(this, SummaryAvailable::class.java)
+            intent.putExtra("userId", firebaseAuth.currentUser?.uid)
             startActivity(intent)
         }
 
@@ -34,19 +38,16 @@ class SignInActivity : AppCompatActivity() {
             val pass = binding.passET.text.toString()
 
             if (email.isNotEmpty() && pass.isNotEmpty()) {
-
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, Userprofile::class.java)
+                        val intent = Intent(this, AddAvailableMedicines::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
-
                     }
                 }
             } else {
                 Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
-
             }
         }
 

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mName"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Medicine Name"
+            android:textColor="@color/feedMedicineName"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_mWeight"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/txt_mName"
+            android:layout_alignBottom="@+id/txt_mName"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="-28dp"
+            android:text="weight"
+            android:textColor="@color/feedMedicineWeight"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_mQty"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/txt_mName"
+            android:layout_alignBottom="@+id/txt_mName"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="-28dp"
+            android:text="qty"
+            android:textColor="@color/feedMedicineWeight"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:id="@+id/txt_mDesc"
+            android:text="Description"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="78dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CL_feed_btn_update"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/add_available_background_btn2">
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Update"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CL_feed_btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/background_button">
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Delete"
+                android:background="@android:color/transparent"
+                android:textColor="@color/purple_700"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

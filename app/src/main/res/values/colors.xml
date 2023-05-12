@@ -18,7 +18,14 @@
     <color name="availableMedicine_background">#cccbe6</color>
     <color name="userActivity_background">#AFF2F2</color>
     <color name="grey">#3C3C42</color>
-    <color name="feedMedicineName">#363333</color>
+    <!--    <color name="feedMedicineName">#363333</color>-->
+    <color name="feedMedicineName">#746C6B</color>
+    <color name="feedMedicineQty">#292929</color>
+    <color name="feedMedicineWeight">#8F8D8D</color>
+    <color name="feedUserDetails">#969696</color>
+
+    <!--    loading layout color-->
+    <color name="progressLayout">#3944bc</color>
 
     <!--    need medicines-->
     <string name="medicine1">Amoxicillin.</string>

@@ -31,7 +31,7 @@
     <string name="feedContact_btn">Contact</string>
     <string name="feedMedicine_name_1">Acetazolamide Tablets</string>
 
-    <string name="feedMedicine_weight_1">100 g</string>
+    <string name="feedMedicine_weight_1">100 mg</string>
     <string name="feedMedicine_poster_1">A. B. C. Perera</string>
     <string name="feedMedicine_location_1">Toronto, Canada</string>
     <string name="feedMedicine_qty_1">2 Packs</string>

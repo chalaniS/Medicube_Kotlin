@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/userImage"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/userImage"
+            android:text="Medicine Name"
+            android:textColor="@color/feedMedicineName"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mWeight"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/mName"
+            android:layout_alignBottom="@+id/mName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="4dp"
+            android:text="weight"
+            android:textColor="@color/feedMedicineWeight" />
+
+        <TextView
+            android:id="@+id/mQty"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/mName"
+            android:layout_alignStart="@+id/mName"
+            android:layout_marginTop="6dp"
+            android:text="quantity"
+            android:textColor="@color/feedMedicineQty" />
+
+        <TextView
+            android:id="@+id/mUser"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="User name"
+            android:textColor="@color/feedUserDetails"
+            android:textSize="14sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="75dp" />
+
+        <TextView
+            android:id="@+id/mLocation"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="location"
+            android:textColor="@color/feedUserDetails"
+            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CL_feed_btn_contact"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@id/mWeight"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/contact_btn_feed">
+
+            <TextView
+                android:id="@+id/textView103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedContact_btn"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
