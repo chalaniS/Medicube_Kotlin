@@ -78,6 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:required="true"
             android:hint="@string/avFeed_enter_medicineName"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -101,6 +102,7 @@
             android:id="@+id/mWeight"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
+            android:required="true"
             android:layout_height="wrap_content"
             android:hint="@string/avFeed_enter_medicineWeight"
             android:inputType="text" />
@@ -126,8 +128,9 @@
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:required="true"
             android:hint="@string/avFeed_enter_medicineQty"
-            android:inputType="text" />
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -149,6 +152,7 @@
             android:id="@+id/mDesc"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
+            android:required="true"
             android:layout_height="wrap_content"
             android:hint="@string/avFeed_enter_medicineDescription"
             android:inputType="text" />

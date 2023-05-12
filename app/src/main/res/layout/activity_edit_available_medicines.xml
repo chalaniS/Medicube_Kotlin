@@ -9,7 +9,7 @@
     tools:context=".AddAvailableMedicines">
 
     <TextView
-        android:id="@+id/txt_editAv_title_1"
+        android:id="@+id/utxt_editAv_title_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txt_editAv_title_2"
+        android:id="@+id/utxt_editAv_title_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -32,23 +32,23 @@
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/txt_editAv_title_1"
-        app:layout_constraintTop_toBottomOf="@+id/txt_editAv_title_1" />
+        app:layout_constraintStart_toStartOf="@+id/utxt_editAv_title_1"
+        app:layout_constraintTop_toBottomOf="@+id/utxt_editAv_title_1" />
 
 
     <TextView
-        android:id="@+id/txt_addAv_tagline"
+        android:id="@+id/utxt_addAv_tagline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/moto_addAvailable"
         android:textColor="#605E5E"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/txt_editAv_title_2"
-        app:layout_constraintTop_toBottomOf="@+id/txt_editAv_title_2" />
+        app:layout_constraintStart_toStartOf="@+id/utxt_editAv_title_2"
+        app:layout_constraintTop_toBottomOf="@+id/utxt_editAv_title_2" />
 
     <ImageView
-        android:id="@+id/img_addAv"
+        android:id="@+id/uimg_addAv"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="72dp"
@@ -58,7 +58,7 @@
         app:srcCompat="@drawable/edit_av" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/mNameLayout"
+        android:id="@+id/umNameLayout"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,21 +69,21 @@
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/txt_addAv_title_1"
-        app:layout_constraintTop_toBottomOf="@+id/txt_addAv_tagline">
+        app:layout_constraintTop_toBottomOf="@+id/utxt_addAv_tagline">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mName"
+            android:id="@+id/umName"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:required="true"
             android:hint="@string/avFeed_enter_medicineName"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/mWeightLayout"
+        android:id="@+id/umWeightLayout"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -93,21 +93,22 @@
         android:layout_marginEnd="32dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
-        app:layout_constraintEnd_toEndOf="@+id/mNameLayout"
-        app:layout_constraintStart_toStartOf="@+id/mNameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/mNameLayout">
+        app:layout_constraintEnd_toEndOf="@+id/umNameLayout"
+        app:layout_constraintStart_toStartOf="@+id/umNameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/umNameLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mWeight"
+            android:id="@+id/umWeight"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/avFeed_enter_medicineWeight"
+            android:required="true"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/mQtyLayout"
+        android:id="@+id/umQtyLayout"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -117,21 +118,22 @@
         android:layout_marginEnd="32dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
-        app:layout_constraintEnd_toEndOf="@+id/mWeightLayout"
-        app:layout_constraintStart_toStartOf="@+id/mWeightLayout"
-        app:layout_constraintTop_toBottomOf="@+id/mWeightLayout">
+        app:layout_constraintEnd_toEndOf="@+id/umWeightLayout"
+        app:layout_constraintStart_toStartOf="@+id/umWeightLayout"
+        app:layout_constraintTop_toBottomOf="@+id/umWeightLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mQty"
+            android:id="@+id/umQty"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
+            android:required="true"
             android:layout_height="wrap_content"
             android:hint="@string/avFeed_enter_medicineQty"
-            android:inputType="text" />
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/mDescLayout"
+        android:id="@+id/umDescLayout"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -141,12 +143,12 @@
         android:layout_marginEnd="32dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
-        app:layout_constraintEnd_toEndOf="@+id/mQtyLayout"
-        app:layout_constraintStart_toStartOf="@+id/mQtyLayout"
-        app:layout_constraintTop_toBottomOf="@+id/mQtyLayout">
+        app:layout_constraintEnd_toEndOf="@+id/umQtyLayout"
+        app:layout_constraintStart_toStartOf="@+id/umQtyLayout"
+        app:layout_constraintTop_toBottomOf="@+id/umQtyLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mDesc"
+            android:id="@+id/umDesc"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -156,7 +158,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/CL_addAv_submit_btn"
+        android:id="@+id/uCL_addAv_submit_btn"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
@@ -165,10 +167,10 @@
         android:background="@drawable/add_available_background_btn1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mDescLayout">
+        app:layout_constraintTop_toBottomOf="@+id/umDescLayout">
 
         <Button
-            android:id="@+id/saveBtn"
+            android:id="@+id/usaveBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -186,19 +188,19 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/CL_addAv_cancel_btn"
+        android:id="@+id/uCL_addAv_cancel_btn"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/add_available_background_btn2"
-        app:layout_constraintEnd_toEndOf="@+id/CL_addAv_submit_btn"
-        app:layout_constraintStart_toStartOf="@+id/CL_addAv_submit_btn"
-        app:layout_constraintTop_toBottomOf="@+id/CL_addAv_submit_btn">
+        app:layout_constraintEnd_toEndOf="@+id/uCL_addAv_submit_btn"
+        app:layout_constraintStart_toStartOf="@+id/uCL_addAv_submit_btn"
+        app:layout_constraintTop_toBottomOf="@+id/uCL_addAv_submit_btn">
 
         <Button
-            android:id="@+id/cancelBtn"
+            android:id="@+id/ucancelBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
