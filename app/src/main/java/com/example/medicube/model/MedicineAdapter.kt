@@ -12,7 +12,6 @@ import com.google.firebase.database.*
 import android.content.Intent
 import com.example.medicube.EditAvailableMedicines
 
-
 class MedicineAdapter(
     private val context: Context,
     private val list: ArrayList<AvailableData>,
@@ -26,7 +25,6 @@ class MedicineAdapter(
         var mDesc: TextView = itemView.findViewById(R.id.txt_mDesc)
         var mDeleteButton: Button = itemView.findViewById(R.id.deleteBtn)
         var mUpdateButton: Button = itemView.findViewById(R.id.updateBtn)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -50,9 +48,7 @@ class MedicineAdapter(
             intent.putExtra("medicine_id", medicine.id)
             context.startActivity(intent)
         }
-
     }
-
 
     override fun getItemCount(): Int {
         return list.size

@@ -144,9 +144,8 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottumNavigationView"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:background="@color/nav_bg"
-        app:elevation="8dp"
+        android:layout_height="60dp"
+        android:background="@color/bottom_nav_background"
         app:itemIconTint="@drawable/bottom_nav_colors"
         app:itemTextColor="@drawable/bottom_nav_colors"
         app:layout_constraintBottom_toBottomOf="parent"
