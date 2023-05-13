@@ -30,6 +30,7 @@
             android:textSize="34sp" />
 
         <LinearLayout
+            android:id="@+id/needM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"

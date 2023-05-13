@@ -1,15 +1,11 @@
 package com.example.medicube
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 
-class Editprofile : AppCompatActivity() {
+class NeedSummaryItem : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_editprofile)
-
-
+        setContentView(R.layout.activity_need_summary_item)
     }
 }

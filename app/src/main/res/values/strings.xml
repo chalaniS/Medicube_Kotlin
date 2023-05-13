@@ -81,5 +81,43 @@
     <string name="summary_btn_edit">Edit</string>
     <string name="summary_btn_delete">Delete</string>
     <string name="pharmacyName">Pharmacy</string>
+    <string name="Addneedmedicine">Add Need Medicine</string>
+    <string name="EditneedMedicine">"Edit Need Medicine "</string>
+
+
+    <!-- placeholder text -->
+
+    <string name="NeedMedicine">Need Medicine</string>
+    <string name="name1">A.B.Perera</string>
+    <string name="address1">No.7, Kaduwela Road, Malabe</string>
+    <string name="medicine1">Amoxicillin. 500mg</string>
+    <string name="button1">Connect</string>
+    <string name="medicine2">Azithromycin. 100mg</string>
+    <string name="name2">C.N. Saparamadu</string>
+    <string name="address2">Ballapana,Kegalle</string>
+    <string name="medicine3">Atorvastatin. 250mg</string>
+    <string name="name3">Aishu Ahasya</string>
+    <string name="address3">No.2,Temple road, Kurunegala</string>
+    <string name="medicine4">Carbimazole, 5mg</string>
+    <string name="name4">Oneki De Silva</string>
+    <string name="adress4">No.20/1,Flower Road, Gampaha</string>
+    <string name="medicinename">Medicine Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="description">Description</string>
+    <string name="buttons">Submit</string>
+    <string name="editneedmedicine">Edit Need Medicine</string>
+    <string name="summary">Summary</string>
+    <string name="buttonc">Cancel</string>
+    <string name="buttone">Edit</string>
+    <string name="buttond">Delete</string>
+    <string name="AddNeedMedicine">Add Need Medicine</string>
+
+    <string name="needmedicine">NEED MEDICINE</string>
+    <string name="whatmedicine">Do you want medicine?</string>
+    <string name="quantity1">30 tablets</string>
+    <string name="tablets">30 tablets</string>
+    <string name="mediname">Medicine Name</string>
+    <string name="weight">Weight</string>
+    <string name="buttonE">EDIT</string>
 
 </resources>

@@ -22,5 +22,19 @@ class HomePage : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        //need medicine navigation
+        // Find the LinearLayout by its ID
+        val needM = findViewById<LinearLayout>(R.id.needM)
+
+        // Set a click listener on the LinearLayout
+        needM.setOnClickListener {
+            // Create an intent to navigate to the target activity
+            val intent = Intent(this, SummaryNeedMedicine::class.java)
+
+            // Start the target activity
+            startActivity(intent)
+        }
+
     }
 }

@@ -27,12 +27,6 @@
     <!--    loading layout color-->
     <color name="progressLayout">#3944bc</color>
 
-    <!--    need medicines-->
-    <string name="medicine1">Amoxicillin.</string>
-    <string name="medi">Amoxicillin.  500mg</string>
-    <string name="name">A.B.Perera</string>
-    <string name="Ad">No. 07, Kaduwela Road, Malabe</string>
-    <string name="contact">Contact</string>
-    <string name="medical">Azithromycin. 100mg</string>
+
 
 </resources>

@@ -24,8 +24,8 @@ class MedicineAdapter(
         var mWeight: TextView = itemView.findViewById(R.id.txt_mWeight)
         var mQty: TextView = itemView.findViewById(R.id.txt_mQty)
         var mDesc: TextView = itemView.findViewById(R.id.txt_mDesc)
-        var mDeleteButton: Button = itemView.findViewById(R.id.deleteBtn)
-        var mUpdateButton: Button = itemView.findViewById(R.id.updateBtn)
+        var mDeleteButton: Button = itemView.findViewById(R.id.ndeleteBtn)
+        var mUpdateButton: Button = itemView.findViewById(R.id.mdatebtn)
 
     }
 

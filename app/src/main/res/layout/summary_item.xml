@@ -71,11 +71,11 @@
             android:background="@drawable/add_available_background_btn2">
 
             <Button
-                android:id="@+id/updateBtn"
+                android:id="@+id/mdatebtn"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:text="Update"
                 android:background="@android:color/transparent"
+                android:text="Update"
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 android:textStyle="bold"
@@ -95,7 +95,7 @@
             android:background="@drawable/background_button">
 
             <Button
-                android:id="@+id/deleteBtn"
+                android:id="@+id/ndeleteBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:text="Delete"
