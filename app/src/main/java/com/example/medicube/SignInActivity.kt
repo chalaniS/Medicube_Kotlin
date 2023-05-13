@@ -1,11 +1,12 @@
 package com.example.medicube
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.medicube.databinding.ActivitySignInBinding
+import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
-
 
 class SignInActivity : AppCompatActivity() {
 
@@ -17,21 +18,15 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        FirebaseApp.initializeApp(this) // initialize Firebase
+
         firebaseAuth = FirebaseAuth.getInstance()
 
-//        binding.textView.setOnClickListener {
-////            val intent = Intent(this, SignUpActivity::class.java)
-//            //edit here
-//            val intent = Intent(this, SummaryAvailable::class.java)
-//
-//            startActivity(intent)
-//        }
-
         binding.textView.setOnClickListener {
-            val intent = Intent(this, AddAvailableMedicines::class.java)
-            intent.putExtra("userId", firebaseAuth.currentUser?.uid)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
+
 
         binding.button.setOnClickListener {
             val email = binding.emailEt.text.toString()
@@ -40,7 +35,7 @@ class SignInActivity : AppCompatActivity() {
             if (email.isNotEmpty() && pass.isNotEmpty()) {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, AddAvailableMedicines::class.java)
+                        val intent = Intent(this, HomePage::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -50,15 +45,5 @@ class SignInActivity : AppCompatActivity() {
                 Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
-
-//    override fun onStart() {
-//        super.onStart()
-//
-//        if(firebaseAuth.currentUser != null){
-//            val intent = Intent(this, HomePage::class.java)
-//            startActivity(intent)
-//        }
-//    }
 }

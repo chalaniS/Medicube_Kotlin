@@ -9,7 +9,7 @@
         android:id="@+id/favorite"
         android:name="com.example.medicube.Userprofile"
         android:label="activity_editprofile"
-        tools:layout="@layout/activity_editprofile" />
+        tools:layout="@layout/activity_edit_user" />
 
     <activity
         android:id="@+id/medicine"
@@ -21,7 +21,7 @@
         android:id="@+id/profile"
         android:name="com.example.medicube.SignInActivity"
         android:label="activity_sign_in"
-        tools:layout="@layout/activity_sign_in" />
+        tools:layout="@layout/activity_userprofile" />
 
     <activity
         android:id="@+id/notification"

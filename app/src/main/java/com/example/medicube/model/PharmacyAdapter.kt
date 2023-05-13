@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.medicube.R
-import com.google.firebase.database.*
 import android.content.Intent
 import com.example.medicube.DeleteUpdate
 
@@ -41,15 +40,20 @@ class PharmacyAdapter(
         holder.pLocation.text = pharmacy.location
         holder.pOwner.text = pharmacy.owner
 
-//        holder.mDeleteButton.setOnClickListener {
-//            onDelete(medicine)
-//        }
-//
-//        holder.mUpdateButton.setOnClickListener {
-//            val intent = Intent(context, EditAvailableMedicines::class.java)
-//            intent.putExtra("medicine_id", medicine.id)
+        holder.pDeleteButton.setOnClickListener {
+            onDelete(pharmacy)
+        }
+
+        holder.pUpdateButton.setOnClickListener {
+//            val intent = Intent(context, DeleteUpdate::class.java)
+//            intent.putExtra("pharmacy_id", pharmacy.id)
 //            context.startActivity(intent)
-//        }
+
+            val intent = Intent(context, DeleteUpdate::class.java)
+            intent.putExtra("pharmacy_id", pharmacy.id)
+            context.startActivity(intent)
+
+        }
 
     }
 

@@ -23,13 +23,13 @@ class PharmacyFeed : AppCompatActivity() {
         setContentView(R.layout.activity_pharmacy_feed)
 
         recyclerView = findViewById(R.id.recyclerView)
-        databaseReference = FirebaseDatabase.getInstance().getReference("Pharmacy")
+        databaseReference = FirebaseDatabase.getInstance().getReference("Pharmacies")
         list = ArrayList()
         recyclerView.layoutManager = LinearLayoutManager(this)
-//        adapter = PharmacyAdapter(this, list) { medicine ->
-//            onDelete(medicine)
-//        }
-        recyclerView.adapter = adapter
+        adapter = PharmacyAdapter(this, list) { medicine ->
+            onDelete(medicine)
+        }
+        recyclerView.adapter = adapter // <- Uncomment this line
 
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -46,7 +46,7 @@ class PharmacyFeed : AppCompatActivity() {
             }
         })
 
-        val addPharmacyButton = findViewById<ImageView>(R.id.pharmacy_add)
+        val addPharmacyButton = findViewById<Button>(R.id.add_phar)
         addPharmacyButton.setOnClickListener {
             val intent = Intent(this, AddPharmacy::class.java)
             startActivity(intent)
@@ -54,8 +54,9 @@ class PharmacyFeed : AppCompatActivity() {
 
     }
 
-//    private fun onDelete(medicine: AvailableData) {
-//        val databaseReference = FirebaseDatabase.getInstance().getReference("Available Medicines").child(medicine.id)
-//        databaseReference.removeValue()
-//    }
+    private fun onDelete(medicine: PharmacyData) {
+        val databaseReference = FirebaseDatabase.getInstance().getReference("Pharmacies").child(medicine.id)
+        databaseReference.removeValue()
+    }
+
 }
