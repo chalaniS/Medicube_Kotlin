@@ -24,5 +24,6 @@ These are the 4 main functionalities we are going to implement in our project.<b
 ●	Available Medicine Management    IT21378270 (yasirabanuka)<br/>
 ●	Needed Medicine Management       IT21362958 (tharanikarunathilaka)<br/>
 ●	Available Places Management      IT21181160 (vishvi)<br/>
+\
 
 
