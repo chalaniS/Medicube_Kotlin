@@ -4,8 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.medicube.model.AvailableData
+import com.example.medicube.model.MedicineAdapter
 import com.example.medicube.model.NeedAdapter
 import com.example.medicube.model.NeedData
 import com.google.firebase.database.*
@@ -23,33 +26,18 @@ class SummaryNeedMedicine : AppCompatActivity() {
         recyclerView = findViewById(R.id.recycle)
         databaseReference = FirebaseDatabase.getInstance().getReference("Need Medicines")
         list = ArrayList()
-        adapter = NeedAdapter(this, list, ::onDelete) { medicine ->
-            //handle edit button click
-            val intent = Intent(this, EditNeedMedicine::class.java)
-            intent.putExtra("medicine_id", medicine.medicineID)
-            startActivity(intent)
-        }
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = adapter
-
-        // Find the Button by its ID
-        val addnm = findViewById<Button>(R.id.addmnnav)
-
-        // Set a click listener on the Button
-        addnm.setOnClickListener {
-            // Create an intent to navigate to the target activity
-            val intent = Intent(this, AddNeedMedicine::class.java)
-
-            // Start the target activity
-            startActivity(intent)
+        adapter = NeedAdapter(this, list) { medicine ->
+            onDelete(medicine)
         }
+        recyclerView.adapter = adapter
 
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 list.clear()
                 for (dataSnapshot in snapshot.children) {
                     val medicine = dataSnapshot.getValue(NeedData::class.java)
-                    medicine?.let { list.add(it) }
+                    list.add(medicine!!)
                 }
                 adapter.notifyDataSetChanged()
             }
@@ -58,6 +46,13 @@ class SummaryNeedMedicine : AppCompatActivity() {
                 // Handle error
             }
         })
+
+        val addMedicineButton = findViewById<Button>(R.id.addmnnav)
+        addMedicineButton.setOnClickListener {
+            val intent = Intent(this, AddNeedMedicine::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun onDelete(medicine: NeedData) {
