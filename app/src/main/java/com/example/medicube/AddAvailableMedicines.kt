@@ -43,14 +43,11 @@ class AddAvailableMedicines : AppCompatActivity() {
 
                 Toast.makeText(this, "Data inserted Successfully", Toast.LENGTH_LONG).show()
 
+                // naviagte to summary page
+                val intent = Intent(this, SummaryAvailable::class.java)
+                startActivity(intent)
 
-
-                    // Create an intent to navigate to the target activity
-                    val intent = Intent(this, SummaryAvailable::class.java)
-
-                    // Start the target activity
-                    startActivity(intent)
-
+                finish()
 
             }.addOnFailureListener {
                 Toast.makeText(this, "Something went wrong!!", Toast.LENGTH_LONG).show()
