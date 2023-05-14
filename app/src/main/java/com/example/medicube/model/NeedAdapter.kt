@@ -24,7 +24,7 @@ class NeedAdapter(
         var nQty: TextView = itemView.findViewById(R.id.qty)
         var nDesc: TextView = itemView.findViewById(R.id.desc)
         var nDeleteButton: TextView = itemView.findViewById(R.id.undelete)
-        var nUpdateButton: Button = itemView.findViewById(R.id.nuedit)
+        var nUpdateButton: TextView = itemView.findViewById(R.id.nuedit)
 
     }
 

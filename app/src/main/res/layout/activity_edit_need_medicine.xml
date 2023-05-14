@@ -9,7 +9,7 @@
     tools:context=".EditNeedMedicine">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/unstextView6"
         android:layout_width="376dp"
         android:layout_height="58dp"
         android:layout_marginStart="8dp"
@@ -21,7 +21,7 @@
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintBottom_toTopOf="@+id/unstextView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,22 +29,23 @@
         app:layout_constraintVertical_bias="0.695" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/usnstextView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:text="@string/moto_addAvailable"
         android:textColor="?attr/colorPrimary"
         android:textSize="20sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/BottumNavigationView"
+        app:layout_constraintBottom_toTopOf="@+id/unsBottumNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.242"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.201" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/medicinename"
+        android:id="@+id/unsmedicinename"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="360dp"
         android:layout_height="75dp"
@@ -52,16 +53,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="16dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
-        app:layout_constraintBottom_toTopOf="@+id/BottumNavigationView"
+        app:layout_constraintBottom_toTopOf="@+id/unsmWeightLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6">
+        app:layout_constraintTop_toBottomOf="@+id/unstextView6">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mname"
+            android:id="@+id/unsmname"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="355dp"
             android:layout_height="70dp"
@@ -71,24 +72,24 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/mWeightLayout"
+        android:id="@+id/unsmWeightLayout"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="360dp"
         android:layout_height="75dp"
         android:layout_marginHorizontal="6dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="33dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
-        app:layout_constraintBottom_toTopOf="@+id/BottumNavigationView"
+        app:layout_constraintBottom_toTopOf="@+id/unsmedicinequantity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medicinename">
+        app:layout_constraintTop_toBottomOf="@+id/unsmedicinename">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/mWeight"
+            android:id="@+id/unsmWeight"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="355dp"
             android:layout_height="75dp"
@@ -97,7 +98,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/medicinequantity"
+        android:id="@+id/unsmedicinequantity"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="360dp"
         android:layout_height="75dp"
@@ -111,10 +112,10 @@
         app:layout_constraintBottom_toTopOf="@+id/BottumNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medicinename">
+        app:layout_constraintTop_toBottomOf="@+id/unsmedicinename">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/quantity"
+            android:id="@+id/unsquantity"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="355dp"
             android:layout_height="70dp"
@@ -123,7 +124,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/medicinedescription"
+        android:id="@+id/unsmedicinedescription"
         style="@style/LoginTextInputOuterFieldStyle"
         android:layout_width="360dp"
         android:layout_height="75dp"
@@ -134,13 +135,13 @@
         android:layout_marginBottom="80dp"
         app:boxStrokeColor="@color/purple_700"
         app:hintTextColor="@color/purple_700"
-        app:layout_constraintBottom_toTopOf="@+id/BottumNavigationView"
+        app:layout_constraintBottom_toTopOf="@+id/unsconstraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medicinequantity">
+        app:layout_constraintTop_toBottomOf="@+id/unsmedicinequantity">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/description2"
+            android:id="@+id/unsdescription2"
             style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="355dp"
             android:layout_height="70dp"
@@ -150,7 +151,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/unsconstraintLayout3"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -158,14 +159,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/to_background"
-        app:layout_constraintBottom_toTopOf="@+id/BottumNavigationView"
-        app:layout_constraintEnd_toStartOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/unsconstraintLayout4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medicinedescription"
+        app:layout_constraintTop_toBottomOf="@+id/unsmedicinedescription"
         app:layout_constraintVertical_bias="0.888">
 
         <TextView
-            android:id="@+id/buttons"
+            android:id="@+id/unsbuttons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/addAvailable_btn_submit"
@@ -178,7 +178,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
+        android:id="@+id/unsconstraintLayout4"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -188,12 +188,12 @@
         android:background="@drawable/to_background"
         app:layout_constraintBottom_toTopOf="@+id/BottumNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/medicinedescription"
-        app:layout_constraintVertical_bias="0.888">
+        app:layout_constraintStart_toEndOf="@+id/unsconstraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/unsmedicinedescription"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/buttonC"
+            android:id="@+id/unsbuttonC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/addAvailable_btn_cancel"
