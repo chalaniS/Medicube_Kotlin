@@ -13,6 +13,7 @@ Our project “MediCude” is a mobile application that has the main goal of ove
 
 
 
+
 Anyone with a smartphone can use this application by creating an account. Patients can enter their required medicines along with the quantities to the Need Medicine feed and donors can enter the medicines they have with quantities and with their contact information to the Available Medicine feed. So that patients can contact donors when they found their required medicine in the Available Medicine feed. Also, the pharmacies in the country can sign up with this app and enter their available medicine stocks and regularly update the stock details.<br/><br/>
 
 
