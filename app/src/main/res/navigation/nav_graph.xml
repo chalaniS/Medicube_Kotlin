@@ -9,19 +9,19 @@
         android:id="@+id/favorite"
         android:name="com.example.medicube.Userprofile"
         android:label="activity_editprofile"
-        tools:layout="@layout/activity_editprofile" />
+        tools:layout="@layout/activity_home_page" />
 
     <activity
         android:id="@+id/medicine"
         android:name="com.example.medicube.SignInActivity"
         android:label="activity_sign_in"
-        tools:layout="@layout/activity_sign_in" />
+        tools:layout="@layout/activity_summary_available" />
 
     <activity
         android:id="@+id/profile"
         android:name="com.example.medicube.SignInActivity"
         android:label="activity_sign_in"
-        tools:layout="@layout/activity_sign_in" />
+        tools:layout="@layout/activity_userprofile" />
 
     <activity
         android:id="@+id/notification"
@@ -33,6 +33,6 @@
         android:id="@+id/setting"
         android:name="com.example.medicube.SignUpActivity"
         android:label="activity_sign_up"
-        tools:layout="@layout/activity_sign_up" />
+        tools:layout="@layout/activity_calculation" />
 
 </navigation>

@@ -17,6 +17,9 @@
         android:theme="@style/Theme.LoginAndSignUp"
         tools:targetApi="31">
         <activity
+            android:name=".Calculation"
+            android:exported="false" />
+        <activity
             android:name=".NeedSummaryItem"
             android:exported="false" />
         <activity

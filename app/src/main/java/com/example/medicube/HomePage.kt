@@ -36,5 +36,19 @@ class HomePage : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        //need medicine navigation
+        // Find the LinearLayout by its ID
+        val summry = findViewById<LinearLayout>(R.id.summrnav)
+
+        // Set a click listener on the LinearLayout
+        summry.setOnClickListener {
+            // Create an intent to navigate to the target activity
+            val intent = Intent(this, Calculation::class.java)
+
+            // Start the target activity
+            startActivity(intent)
+        }
+
     }
 }

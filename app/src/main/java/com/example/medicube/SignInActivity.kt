@@ -19,17 +19,8 @@ class SignInActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-//        binding.textView.setOnClickListener {
-////            val intent = Intent(this, SignUpActivity::class.java)
-//            //edit here
-//            val intent = Intent(this, SummaryAvailable::class.java)
-//
-//            startActivity(intent)
-//        }
-
         binding.textView.setOnClickListener {
-            val intent = Intent(this, SummaryAvailable::class.java)
-            intent.putExtra("userId", firebaseAuth.currentUser?.uid)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
 
@@ -40,7 +31,7 @@ class SignInActivity : AppCompatActivity() {
             if (email.isNotEmpty() && pass.isNotEmpty()) {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, AddAvailableMedicines::class.java)
+                        val intent = Intent(this, HomePage::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

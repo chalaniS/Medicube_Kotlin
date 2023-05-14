@@ -162,7 +162,7 @@ class SignUpActivity : AppCompatActivity() {
                     print("Im in image uploaded")
 
                     //after path should be added
-                    startActivity(Intent(this, HomePage::class.java))
+                    startActivity(Intent(this, SignInActivity::class.java))
                     finish()
                     Toast.makeText(this, "User Sign In Successfull", Toast.LENGTH_SHORT).show()
 
